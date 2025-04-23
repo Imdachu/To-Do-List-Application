@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "02ea7a5d-5e2d-4164-bcc0-9b625fe31feb",
+		"name": "todo task backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43175766",
+		"_collection_link": "https://solar-spaceship-534327.postman.co/workspace/c41c6c03-fb17-4141-8e5a-690ba4686c80/collection/43175766-02ea7a5d-5e2d-4164-bcc0-9b625fe31feb?action=share&source=collection_link&creator=43175766"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user123@example.com\",\r\n  \"password\": \"StrongPass2025!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user123@example.com\",\r\n  \"password\": \"StrongPass2025!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user1234@example.com\",\r\n  \"password\": \"StrongPass20252!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user1234@example.com\",\r\n  \"password\": \"StrongPass20252!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODA4ZWM1YWQ4Nzk2MGJiNjExYzAzMTciLCJpYXQiOjE3NDU0MTU0MDksImV4cCI6MTc0NTQxOTAwOX0.hcW0OlXe-p2W3i_m3x-BHJPYzxtZepZXB70LfbgNdek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"Milk, eggs, bread\",\r\n  \"dueDate\": \"2025-05-01\",\r\n  \"category\": \"Shopping\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/tasks/6808ed66d87960bb611c031a"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODA4ZWM1YWQ4Nzk2MGJiNjExYzAzMTciLCJpYXQiOjE3NDU0MTU0MDksImV4cCI6MTc0NTQxOTAwOX0.hcW0OlXe-p2W3i_m3x-BHJPYzxtZepZXB70LfbgNdek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"Milk, eggs, bread\",\r\n  \"dueDate\": \"2025-05-01\",\r\n  \"category\": \"Shopping\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/tasks/6808ed66d87960bb611c031a"
+			},
+			"response": []
+		},
+		{
+			"name": " Update Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODA4ZWM1YWQ4Nzk2MGJiNjExYzAzMTciLCJpYXQiOjE3NDU0MTU0MDksImV4cCI6MTc0NTQxOTAwOX0.hcW0OlXe-p2W3i_m3x-BHJPYzxtZepZXB70LfbgNdek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Milk, eggs, bread, butter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/tasks/6808ed66d87960bb611c031a"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Tasks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODA4ZWM1YWQ4Nzk2MGJiNjExYzAzMTciLCJpYXQiOjE3NDU0MTU0MDksImV4cCI6MTc0NTQxOTAwOX0.hcW0OlXe-p2W3i_m3x-BHJPYzxtZepZXB70LfbgNdek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Milk, eggs, bread, butter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/tasks/search?q=groceries",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "groceries"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"auth_token\", pm.response.json().token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODA4ZWM1YWQ4Nzk2MGJiNjExYzAzMTciLCJpYXQiOjE3NDU0MTU0MDksImV4cCI6MTc0NTQxOTAwOX0.hcW0OlXe-p2W3i_m3x-BHJPYzxtZepZXB70LfbgNdek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Milk, eggs, bread, butter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}/api/tasks/6808ed66d87960bb611c031a"
+			},
+			"response": []
+		}
+	]
+}
