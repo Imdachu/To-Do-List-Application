@@ -1,0 +1,5 @@
+# In your project root, run:
+echo ".vscode/
+AppData/
+node_modules/
+.env" > .gitignore
