@@ -1,5 +1,8 @@
-# In your project root, run:
-echo ".vscode/
-AppData/
+# Ignore node_modules and system files
 node_modules/
-.env" > .gitignore
+.DS_Store
+*.log
+*.env
+AppData/
+*.tmp
+*.bak
